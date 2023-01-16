@@ -16,6 +16,12 @@ const paths = {
     watch: './src/**/*.{html,php}',
   },
 
+  layout: {
+    src: './src/layout/**/*.{html,php}',
+    temp: './src/',
+    name: 'index.html',
+  },
+
   styles: {
     src: './src/scss/**/*.{scss,sass}',
     dist: './dist/css/',
