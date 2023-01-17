@@ -16,7 +16,7 @@ const paths = {
   layout: {
     src: './src/layout/*.html',
     temp: './src/',
-    name: 'index.html',
+    watch: './src/layout/**/*.html',
   },
 
   styles: {

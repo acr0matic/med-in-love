@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// Фрагмент стилизации какой-то секции
+// -----------------------------------------------------------------------------
+
+#hero {
+}
+
+.hero {
+  &__content {
+    height: 100%;
+    padding-top: 100px;
+    border-right: 1px solid #615d58;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 42px;
+    border-bottom: 1px solid #615d58;
+
+    font-size: $font-size__title--large;
+
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    span {
+      &:nth-child(1) {
+        margin-left: 60px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 98px;
+      }
+    }
+  }
+
+  &__text {
+    padding-top: 70px;
+  }
+
+  &__picture {
+    width: 150%;
+    max-width: 600px;
+  }
+}

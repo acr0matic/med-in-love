@@ -12,7 +12,8 @@ const paths = require('../gulpfile');
 task('include', () => src(paths.layout.src)
   .pipe(fileinclude({
     prefix: '@@',
-    basepath: '@file'
+    basepath: 'src/',
+    indent: true,
   }))
   .pipe(dest(paths.layout.temp))
   .pipe(stream({ match: 'layout/**/*.html' })));

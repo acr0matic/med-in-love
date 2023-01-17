@@ -1,6 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-@@include('head.html')
+@@include('layout/partials/head.html')
 
 <body>
+  <!-- Шапка -->
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="">
+            <img class="logo logo--header" src="img/logo.svg" alt="">
+          </a>
+        </div>
+        <!-- /.header__logo -->
+
+        <div class="header__nav">
+          <nav class="nav nav--header">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link link" href="">О нас</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link link" href="">Услуги</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link link" href="">Специалисты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.nav -->
+        </div>
+        <!-- /.header__nav -->
+
+        <div class="header__action">
+          <div class="header__callback">
+            <a class="link" href="tel:+375297777952">+375 29 7777952</a>
+            <a class="link link--icon" href="https://t.me/79850333696" target="_blank">
+              @@include('img/icons/social/telegram.svg')
+              +7 985 033 36 96
+            </a>
+          </div>
+          <!-- /.header__callback -->
+
+          <button class="button button-primary">Записаться</button>
+        </div>
+        <!-- /.header__action -->
+      </div>
+      <!-- /.header__wrapper -->
+    </div>
+    <!-- /.container -->
+  </header>

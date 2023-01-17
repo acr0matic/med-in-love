@@ -61,30 +61,125 @@
 </head>
 
 <body>
+  <!-- Шапка -->
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="">
+            <img class="logo logo--header" src="img/logo.svg" alt="">
+          </a>
+        </div>
+        <!-- /.header__logo -->
 
-<!-- Основной контент -->
-<main>
-  <section>
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path
-    d="M20.1887 9.55771C20.6159 9.98495 20.6159 10.6775 20.1887 11.1046L12.8511 18.4423C12.4239 18.8693 11.7315 18.8693 11.3043 18.4423L7.81134 14.9491C7.38409 14.5221 7.38409 13.8295 7.81134 13.4025C8.23837 12.9753 8.93094 12.9753 9.35797 13.4025L12.0776 16.1221L18.6418 9.55771C19.0691 9.13068 19.7616 9.13068 20.1887 9.55771ZM28 14C28 21.7385 21.7374 28 14 28C6.26151 28 0 21.7374 0 14C0 6.26151 6.26257 0 14 0C21.7385 0 28 6.26257 28 14ZM25.8125 14C25.8125 7.47061 20.5285 2.1875 14 2.1875C7.47061 2.1875 2.1875 7.47147 2.1875 14C2.1875 20.5294 7.47147 25.8125 14 25.8125C20.5294 25.8125 25.8125 20.5285 25.8125 14Z"
-    fill="#F2D97E" />
-</svg>
-  </section>
-</main>
+        <div class="header__nav">
+          <nav class="nav nav--header">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link link" href="">О нас</a>
+              </li>
 
-<!-- Подвал -->
-<footer id="footer">
-</footer>
+              <li class="nav__item">
+                <a class="nav__link link" href="">Услуги</a>
+              </li>
 
-<!-- Скрипты -->
-<!-- build:js js/script.min.js -->
-<script src="scripts/libraries/lazyload.js"></script>
-<script src="scripts/libraries/forms.js"></script>
+              <li class="nav__item">
+                <a class="nav__link link" href="">Специалисты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.nav -->
+        </div>
+        <!-- /.header__nav -->
 
-<script src="scripts/base.js"></script>
-<script src="scripts/init.js"></script>
-<!-- endbuild -->
+        <div class="header__action">
+          <div class="header__callback">
+            <a class="link" href="tel:+375297777952">+375 29 7777952</a>
+            <a class="link link--icon" href="https://t.me/79850333696" target="_blank">
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_63_802)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.11539 0C4.08127 0 0 4.02961 0 9C0 13.9704 4.08127 18 9.11539 18C14.1495 18 18.2308 13.9704 18.2308 9C18.2308 4.02961 14.1495 0 9.11539 0ZM13.3405 6.1207C13.2034 7.54383 12.6099 10.9972 12.3079 12.5912C12.1801 13.2659 11.9283 13.4919 11.6848 13.5141C11.1557 13.5622 10.7537 13.1685 10.2409 12.8366C9.4387 12.3173 8.98542 11.9943 8.20669 11.4877C7.30655 10.902 7.89015 10.5803 8.40289 10.0543C8.53713 9.91652 10.8694 7.82191 10.9146 7.63207C10.9203 7.60816 10.9256 7.51957 10.8722 7.47281C10.8188 7.42605 10.7401 7.44223 10.6835 7.45488C10.603 7.47281 9.32119 8.30918 6.83868 9.96398C6.47477 10.2108 6.14541 10.3307 5.84987 10.3247C5.52442 10.3177 4.89845 10.1429 4.43307 9.99352C3.86229 9.81035 3.40866 9.71332 3.44818 9.40219C3.46848 9.24012 3.69458 9.07453 4.12614 8.90508C6.78348 7.7618 8.55529 7.0084 9.4419 6.64418C11.9735 5.60464 12.4995 5.42391 12.8423 5.41793C13.2718 5.41044 13.3755 5.76046 13.3405 6.1207Z"
+                    fill="#615D58" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_63_802">
+                    <rect width="18.2308" height="18" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              +7 985 033 36 96
+            </a>
+          </div>
+          <!-- /.header__callback -->
+
+          <button class="button button-primary">Записаться</button>
+        </div>
+        <!-- /.header__action -->
+      </div>
+      <!-- /.header__wrapper -->
+    </div>
+    <!-- /.container -->
+  </header>
+
+  <!-- Основной контент -->
+  <main>
+    <section id="hero" class="section">
+      <div class="container">
+        <div class="hero">
+          <div class="row">
+            <div class="col-7">
+              <div class="hero__content">
+                <div class="row">
+                  <div class="col-12">
+                    <h1 class="hero__title">
+                      <span>Доверь</span>
+                      <span>свою красоту </span>
+                      <span>профессионалам </span>
+                    </h1>
+                  </div>
+                  <!-- /.col-12 -->
+
+                  <div class="col-7 offset-4 p-0">
+                    <p class="hero__text">
+                      Бережное безоперационная коррекция эстетических особенностей лица и тела, естественный результат с сохранением индивидуальности
+                    </p>
+                  </div>
+                  <!-- /.col-7 offset-2 -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- /.hero__content -->
+            </div>
+            <!-- /.col-7 -->
+
+            <div class="col-5">
+              <picture class="hero__picture lazy">
+                <img class="image image--cover lazy__item" data-src="img/layout/page/index/hero/picture.jpg" alt="">
+              </picture>
+            </div>
+            <!-- /.col-5 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.hero -->
+      </div>
+      <!-- /.container -->
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer id="footer">
+  </footer>
+
+  <!-- Скрипты -->
+  <!-- build:js js/script.min.js -->
+  <script src="scripts/libraries/lazyload.js"></script>
+  <script src="scripts/libraries/forms.js"></script>
+
+  <script src="scripts/base.js"></script>
+  <script src="scripts/init.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>

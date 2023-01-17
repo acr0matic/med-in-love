@@ -3,6 +3,16 @@
 
   @media (hover: hover) {
     &:hover {
+      color: #2c2926;
+    }
+  }
+
+  &--icon {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
     }
   }
 }

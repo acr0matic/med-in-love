@@ -3,9 +3,46 @@
 // -----------------------------------------------------------------------------
 
 #header {
-
 }
 
 .header {
+  position: sticky;
+  z-index: $z-index-header;
+  top: 0;
 
+  padding: 15px 0;
+  background-color: $palette-gray;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    margin-left: auto;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+
+    margin-left: 40px;
+
+    .button {
+      margin-left: 24px;
+    }
+  }
+
+  &__callback {
+    display: flex;
+    align-items: center;
+
+    & > a {
+      font-family: Mukta, sans-serif;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
 }

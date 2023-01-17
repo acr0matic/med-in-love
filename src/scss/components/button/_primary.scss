@@ -1,0 +1,14 @@
+.button-primary {
+  background-color: #1b1917;
+  color: $color-text__white;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: #3d3936;
+    }
+
+    &:active {
+      background-color: #000000;
+    }
+  }
+}

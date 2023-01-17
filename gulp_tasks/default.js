@@ -9,5 +9,5 @@ const paths = require('../gulpfile');
 
 task('default', () => {
   watch(paths.styles.watch, series('scss'))
-  watch(paths.layout.src, series('include'))
+  watch(paths.layout.watch, series('include'))
 });
