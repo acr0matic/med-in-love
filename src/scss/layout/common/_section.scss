@@ -1,9 +1,13 @@
 .section {
-  &__header {
+  padding-top: 100px;
+  padding-bottom: 100px;
 
+  &__header {
+    margin-bottom: 60px;
   }
 
   &__title {
-
+    font-size: $font-size__title--large;
+    text-transform: uppercase;
   }
 }

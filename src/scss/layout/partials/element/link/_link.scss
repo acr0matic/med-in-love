@@ -4,6 +4,10 @@
   @media (hover: hover) {
     &:hover {
       color: #2c2926;
+
+      svg path {
+        fill: #2c2926;
+      }
     }
   }
 

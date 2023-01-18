@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 
 #hero {
+  padding: 0;
 }
 
 .hero {
@@ -21,7 +22,7 @@
 
     font-size: $font-size__title--large;
 
-    line-height: 1.2;
+    line-height: $line-height--secondary;
     text-transform: uppercase;
 
     span {

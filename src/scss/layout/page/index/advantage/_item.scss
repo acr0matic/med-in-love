@@ -1,0 +1,19 @@
+.advantage-item {
+  display: flex;
+
+  &__number {
+    margin-right: 20px;
+    font-size: $font-size__title--large;
+
+    line-height: $line-height--secondary;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: $font-size__text--large;
+  }
+
+  &__text {
+    color: $color-text__gray;
+  }
+}
