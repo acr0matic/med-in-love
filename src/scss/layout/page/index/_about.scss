@@ -1,0 +1,30 @@
+#about {
+  padding: 0;
+
+  .section__header {
+    margin-bottom: 30px;
+  }
+}
+
+.about {
+  &__content {
+    height: 100%;
+
+    padding-top: 130px;
+    border-right: 2px solid $palette-darkgray;
+  }
+
+  &__subtitle {
+    margin-bottom: 12px;
+    font-size: $font-size__text--large;
+  }
+
+  &__text {
+    color: $color-text__gray;
+  }
+
+  &__picture {
+    width: 1085px;
+    height: 670px;
+  }
+}

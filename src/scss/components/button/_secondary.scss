@@ -1,0 +1,14 @@
+.button-secondary {
+  background-color: #eeeeee;
+  color: $color-text__primary;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: #fafafa;
+    }
+
+    &:active {
+      background-color: #e4e4e4;
+    }
+  }
+}

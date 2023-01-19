@@ -1,0 +1,38 @@
+.service-item {
+  width: 100%;
+  padding: 20px 0;
+
+  border-bottom: 1px solid #dedcd9;
+
+  &:first-child {
+    border-top: 1px solid #dedcd9;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 140px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: $font-size__title--small;
+  }
+
+  &__price {
+    font-style: italic;
+    font-size: $font-size__title--small;
+    font-family: RobotoCondensed, sans-serif;
+  }
+
+  &__action {
+    margin-top: auto;
+    margin-left: auto;
+  }
+}

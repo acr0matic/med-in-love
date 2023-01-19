@@ -108,6 +108,161 @@
     </div>
     <!-- /.container -->
   </section>
+
+  <section id="service" class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">
+          Услуги
+        </h2>
+      </div>
+      <!-- /.section__header -->
+
+      <div class="service">
+        <div class="service__wrapper">
+          @@loop('layout/template/service-item.html', [
+          {'image': "img/content/service/1.jpg", 'title': "Филлеры", 'price': "от 400 до 680 BYN"},
+          {'image': "img/content/service/2.jpg", 'title': "Заполнение носослезной борозды", 'price': "от 400 до 680 BYN"},
+          {'image': "img/content/service/3.jpg", 'title': "Безоперационная ринопластика", 'price': "от 400 до 680 BYN"},
+          ])
+        </div>
+        <!-- /.service__wrapper -->
+
+        <div class="service__action">
+          <div class="service__count">
+            Прайс <span>36 услуг</span>
+          </div>
+
+          <img class="ms-auto" src="img/icons/misc/arrow__right.svg" alt="">
+
+          <a class="stretched-link" href=""></a>
+        </div>
+        <!-- /.service__action -->
+      </div>
+      <!-- /.service -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section id="team" class="section">
+    <div class="container">
+      <div class="team">
+        <div class="row gy-4">
+          <div class="col-6">
+            <div class="section__header">
+              <h2 class="section__title">
+                Специалисты
+              </h2>
+            </div>
+            <!-- /.section__header -->
+          </div>
+          <!-- /.col-6 -->
+
+          <div class="col-6">
+            @@include('layout/template/team-item.html', {
+            "photo": "img/content/team/1.jpg",
+            "name": "Виктория Инеенко",
+            "role": "Косметолог, дерматолог"
+            })
+          </div>
+          <!-- /.col-6 -->
+
+          <div class="col-6">
+            @@include('layout/template/team-item.html', {
+            "photo": "img/content/team/2.jpg",
+            "name": "Анастасия Чапина",
+            "role": "Косметолог, дерматолог"
+            })
+          </div>
+          <!-- /.col-6 -->
+
+          <div class="col-6">
+            @@include('layout/template/team-item.html', {
+            "photo": "img/content/team/3.jpg",
+            "name": "Виктория Московкина",
+            "role": "Косметолог, дерматолог"
+            })
+          </div>
+          <!-- /.col-6 -->
+
+          <div class="col-6">
+            @@include('layout/template/team-item.html', {
+            "photo": "img/content/team/4.jpg",
+            "name": "Надежда Железина",
+            "role": "Косметолог, дерматолог"
+            })
+          </div>
+          <!-- /.col-6 -->
+
+
+          <div class="col-6">
+            @@include('layout/template/team-item.html', {
+            "photo": "img/content/team/1.jpg",
+            "name": "Виктория Чапина",
+            "role": "Косметолог, дерматолог"
+            })
+          </div>
+          <!-- /.col-6 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.team -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about">
+        <div class="row">
+          <div class="col-7">
+            <div class="about__content">
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="section__header">
+                    <h2 class="section__title">
+                      О нас
+                    </h2>
+                  </div>
+                  <!-- /.section__header -->
+
+                  <div class="col-8 offset-3">
+                    <h3 class="about__subtitle">
+                      Быть внешне привлекательной в любое время суток – легко!
+                    </h3>
+
+                    <p class="about__text">
+                      Все, что для этого требуется – желание, свободное время и хорошее настроение. Остальное возьмет на себя молодая команда мастеров салона красоты Med in love. Мы гарантируем индивидуальный подход к каждому клиенту, поэтому вы точно останетесь довольны полученным результатом.
+                    </p>
+                  </div>
+                  <!-- /.col-8 -->
+                </div>
+                <!-- /.col-12 -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.about__content -->
+          </div>
+          <!-- /.col-7 -->
+
+          <div class="col-5">
+            <picture class="about__picture lazy">
+              <img class="image image--cover lazy__item" data-src="img/layout/page/index/about/picture.jpg" alt="">
+            </picture>
+
+            <p class="mt-4 pb-5">
+              Салон красоты Med in love – уникальный креативный салон красоты в Минске и Москве с невероятной атмосферой, сервисом и максимальным комфортом
+            </p>
+          </div>
+          <!-- /.col-5 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.about -->
+    </div>
+    <!-- /.container -->
+  </section>
 </main>
 
 @@include('layout/partials/footer.html')

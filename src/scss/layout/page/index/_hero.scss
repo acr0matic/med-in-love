@@ -10,20 +10,33 @@
   &__content {
     height: 100%;
     padding-top: 100px;
-    border-right: 1px solid #615d58;
+    border-right: 2px solid $palette-darkgray;
   }
 
   &__title {
+    position: relative;
     display: flex;
     flex-direction: column;
 
     padding-bottom: 42px;
-    border-bottom: 1px solid #615d58;
 
     font-size: $font-size__title--large;
 
     line-height: $line-height--secondary;
     text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      display: block;
+      width: 200%;
+      height: 2px;
+
+      background-color: $palette-darkgray;
+    }
 
     span {
       &:nth-child(1) {
