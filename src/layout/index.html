@@ -1,7 +1,7 @@
 @@include('layout/partials/header.html')
 
 <!-- Основной контент -->
-<main>
+<main id="home">
   <section id="hero" class="section">
     <div class="container">
       <div class="hero">
@@ -45,7 +45,7 @@
     <!-- /.container -->
   </section>
 
-  <section id="advantage" class="section">
+  <section id="advantage" class="section section--gray">
     <div class="container">
       <div class="section__header">
         <h2 class="section__title">
@@ -144,7 +144,7 @@
     <!-- /.container -->
   </section>
 
-  <section id="team" class="section">
+  <section id="team" class="section section--gray">
     <div class="container">
       <div class="team">
         <div class="row gy-4">
@@ -260,6 +260,120 @@
         <!-- /.row -->
       </div>
       <!-- /.about -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section id="portfolio" class="section section--gray section--overflow">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">
+          Портфолио
+        </h2>
+      </div>
+      <!-- /.section__header -->
+
+      <div class="portfolio">
+        <div class="portfolio__slider slider">
+          <div class="swiper swiper--overflow slider-portfolio-home">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture class="portfolio__picture lazy">
+                  <img class="image image--cover lazy__item" data-src="img/content/portfolio/1.jpg" alt="">
+                </picture>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <picture class="portfolio__picture lazy">
+                  <img class="image image--cover lazy__item" data-src="img/content/portfolio/2.jpg" alt="">
+                </picture>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <picture class="portfolio__picture lazy">
+                  <img class="image image--cover lazy__item" data-src="img/content/portfolio/1.jpg" alt="">
+                </picture>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <picture class="portfolio__picture lazy">
+                  <img class="image image--cover lazy__item" data-src="img/content/portfolio/2.jpg" alt="">
+                </picture>
+              </div>
+              <!-- /.swiper-slide -->
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /.swiper slider-portfolio -->
+        </div>
+        <!-- /.slider -->
+
+        <div class="portfolio__more">
+          Больше работ в нашем инстаграме
+
+          <a class="link link--icon" href="" target="_blank">
+            @@include('img/icons/social/instagram.svg')
+            _med_in_love_
+          </a>
+        </div>
+        <!-- /.portfolio__more -->
+      </div>
+      <!-- /.portfolio -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section id="feedback" class="section section--overflow">
+    <div class="container position-relative">
+      <div class="section__header">
+        <h2 class="section__title">
+          Отзывы
+        </h2>
+      </div>
+      <!-- /.section__header -->
+
+      <div class="feedback">
+        <div class="feedback__slider slider">
+          <div class="swiper swiper--overflow slider-feedback-home">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture class="feedback__picture lazy">
+                  <img class="image image--contain lazy__item" data-src="img/content/feedback/1.jpg" alt="">
+                </picture>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <picture class="feedback__picture lazy">
+                  <img class="image image--contain lazy__item" data-src="img/content/feedback/2.jpg" alt="">
+                </picture>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <picture class="feedback__picture lazy">
+                  <img class="image image--contain lazy__item" data-src="img/content/feedback/1.jpg" alt="">
+                </picture>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <picture class="feedback__picture lazy">
+                  <img class="image image--contain lazy__item" data-src="img/content/feedback/2.jpg" alt="">
+                </picture>
+              </div>
+              <!-- /.swiper-slide -->
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /.swiper slider-feedback -->
+        </div>
+        <!-- /.slider -->
+      </div>
+      <!-- /.feedback -->
     </div>
     <!-- /.container -->
   </section>
