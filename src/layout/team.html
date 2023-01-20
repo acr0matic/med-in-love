@@ -1,0 +1,70 @@
+@@include('layout/partials/header.html')
+
+<main id="team">
+  <section id="team" class="section section--gray">
+    <div class="container">
+      <div class="team">
+        <div class="section__header">
+          <h1 class="section__title">
+            Специалисты
+          </h1>
+        </div>
+        <!-- /.section__header -->
+
+        <div class="row gy-4">
+          <div class="col-6">
+            @@include('layout/template/team-item.html', {
+            "photo": "img/content/team/1.jpg",
+            "name": "Виктория Инеенко",
+            "role": "Косметолог, дерматолог"
+            })
+          </div>
+          <!-- /.col-6 -->
+
+          <div class="col-6">
+            @@include('layout/template/team-item.html', {
+            "photo": "img/content/team/2.jpg",
+            "name": "Анастасия Чапина",
+            "role": "Косметолог, дерматолог"
+            })
+          </div>
+          <!-- /.col-6 -->
+
+          <div class="col-6">
+            @@include('layout/template/team-item.html', {
+            "photo": "img/content/team/3.jpg",
+            "name": "Виктория Московкина",
+            "role": "Косметолог, дерматолог"
+            })
+          </div>
+          <!-- /.col-6 -->
+
+          <div class="col-6">
+            @@include('layout/template/team-item.html', {
+            "photo": "img/content/team/4.jpg",
+            "name": "Надежда Железина",
+            "role": "Косметолог, дерматолог"
+            })
+          </div>
+          <!-- /.col-6 -->
+
+
+          <div class="col-6">
+            @@include('layout/template/team-item.html', {
+            "photo": "img/content/team/1.jpg",
+            "name": "Виктория Чапина",
+            "role": "Косметолог, дерматолог"
+            })
+          </div>
+          <!-- /.col-6 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.team -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+</main>
+
+@@include('layout/partials/footer.html')

@@ -11,10 +11,18 @@
   }
 
   &__header {
+    @include breakpoint($breakpoint-laptop) {
+      margin-bottom: 45px;
+    }
+
     margin-bottom: 60px;
   }
 
   &__title {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__title--medium;
+    }
+
     font-size: $font-size__title--large;
     text-transform: uppercase;
   }

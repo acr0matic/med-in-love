@@ -1,0 +1,11 @@
+.slider-portfolio-home {
+  .swiper-slide {
+    @include breakpoint($breakpoint-laptop) {
+      width: 500px;
+      height: 500px;
+    }
+
+    width: 640px;
+    height: 640px;
+  }
+}

@@ -1,7 +1,8 @@
 main#home {
   .portfolio {
     &__picture {
-      height: 640px;
+      width: 100%;
+      height: 100%;
     }
 
     &__more {

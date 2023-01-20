@@ -8,6 +8,10 @@
 
 .about {
   &__content {
+    @include breakpoint($breakpoint-laptop) {
+      padding-top: 100px;
+    }
+
     height: 100%;
 
     padding-top: 130px;
@@ -24,6 +28,11 @@
   }
 
   &__picture {
+    @include breakpoint($breakpoint-laptop) {
+      width: 850px;
+      height: 540px;
+    }
+
     width: 1085px;
     height: 670px;
   }

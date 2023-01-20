@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Базовые мета-теги для поисковиков -->
+  <title>Заголовок</title>
+
+  <!-- Иконки для страницы -->
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+  <!-- Метатеги которые выводят информацию о странице в поисковой запрос -->
+  <meta name="description" content="описание не длиннее 155 символов" />
+  <meta name="keywords" content="мета-теги, шаблон, html, css, acr0matic" />
+
+  <!-- Метатеги для ссылок в социальных сетях -->
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:title" content="">
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="">
+
+  <!-- Контролирует поведение поисковых систем при индексации страницы -->
+  <meta name="robots" content="index,follow" />
+
+  <!-- Покраска адресной строки в мобильных Chrome, Firefox OS и Opera -->
+  <meta name="theme-color" content="#eeeeee" />
+
+  <!-- Покраска для iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+
+  <!-- Убрать автоматическое определение номера телефона -->
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Место для счетков и аналитики -->
+
+  <!-- Место для счетков и аналитики -->
+
+  <!-- Стили -->
+  <!-- build:css css/style.min.css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!-- Шапка -->
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="">
+            <img class="logo logo--header" src="img/logo.svg" alt="">
+          </a>
+        </div>
+        <!-- /.header__logo -->
+
+        <div class="header__nav">
+          <nav class="nav nav--header">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link link" href="">О нас</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link link" href="">Услуги</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link link" href="">Специалисты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.nav -->
+        </div>
+        <!-- /.header__nav -->
+
+        <div class="header__action">
+          <div class="header__callback callback-list">
+            <a class="link" href="tel:+375297777952">+375 29 7777952</a>
+            <a class="link link--icon" href="https://t.me/79850333696" target="_blank">
+              <svg class="svg" width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.11539 0C4.08127 0 0 4.02961 0 9C0 13.9704 4.08127 18 9.11539 18C14.1495 18 18.2308 13.9704 18.2308 9C18.2308 4.02961 14.1495 0 9.11539 0ZM13.3405 6.1207C13.2034 7.54383 12.6099 10.9972 12.3079 12.5912C12.1801 13.2659 11.9283 13.4919 11.6848 13.5141C11.1557 13.5622 10.7537 13.1685 10.2409 12.8366C9.4387 12.3173 8.98542 11.9943 8.20669 11.4877C7.30655 10.902 7.89015 10.5803 8.40289 10.0543C8.53713 9.91652 10.8694 7.82191 10.9146 7.63207C10.9203 7.60816 10.9256 7.51957 10.8722 7.47281C10.8188 7.42605 10.7401 7.44223 10.6835 7.45488C10.603 7.47281 9.32119 8.30918 6.83868 9.96398C6.47477 10.2108 6.14541 10.3307 5.84987 10.3247C5.52442 10.3177 4.89845 10.1429 4.43307 9.99352C3.86229 9.81035 3.40866 9.71332 3.44818 9.40219C3.46848 9.24012 3.69458 9.07453 4.12614 8.90508C6.78348 7.7618 8.55529 7.0084 9.4419 6.64418C11.9735 5.60464 12.4995 5.42391 12.8423 5.41793C13.2718 5.41044 13.3755 5.76046 13.3405 6.1207Z"
+                    fill="#615D58" />
+                </g>
+              </svg>
+              +7 985 033 36 96
+            </a>
+          </div>
+          <!-- /.header__callback -->
+
+          <button class="button button-primary">Записаться</button>
+        </div>
+        <!-- /.header__action -->
+      </div>
+      <!-- /.header__wrapper -->
+    </div>
+    <!-- /.container -->
+  </header>
+
+<main id="team">
+  <section id="team" class="section section--gray">
+    <div class="container">
+      <div class="team">
+        <div class="section__header">
+          <h1 class="section__title">
+            Специалисты
+          </h1>
+        </div>
+        <!-- /.section__header -->
+
+        <div class="row gy-4">
+          <div class="col-6">
+            <div class="team-item">
+              <picture class="team-item__photo">
+                <img class="image image--cover" src="img/content/team/1.jpg" alt="">
+              </picture>
+
+              <div class="team-item__wrapper">
+                <h3 class="team-item__name">Виктория Инеенко</h3>
+                <div class="team-item__role">Косметолог, дерматолог</div>
+              </div>
+              <!-- /.team-item__wrapper -->
+            </div>
+            <!-- /.team-item -->
+          </div>
+          <!-- /.col-6 -->
+
+          <div class="col-6">
+            <div class="team-item">
+              <picture class="team-item__photo">
+                <img class="image image--cover" src="img/content/team/2.jpg" alt="">
+              </picture>
+
+              <div class="team-item__wrapper">
+                <h3 class="team-item__name">Анастасия Чапина</h3>
+                <div class="team-item__role">Косметолог, дерматолог</div>
+              </div>
+              <!-- /.team-item__wrapper -->
+            </div>
+            <!-- /.team-item -->
+          </div>
+          <!-- /.col-6 -->
+
+          <div class="col-6">
+            <div class="team-item">
+              <picture class="team-item__photo">
+                <img class="image image--cover" src="img/content/team/3.jpg" alt="">
+              </picture>
+
+              <div class="team-item__wrapper">
+                <h3 class="team-item__name">Виктория Московкина</h3>
+                <div class="team-item__role">Косметолог, дерматолог</div>
+              </div>
+              <!-- /.team-item__wrapper -->
+            </div>
+            <!-- /.team-item -->
+          </div>
+          <!-- /.col-6 -->
+
+          <div class="col-6">
+            <div class="team-item">
+              <picture class="team-item__photo">
+                <img class="image image--cover" src="img/content/team/4.jpg" alt="">
+              </picture>
+
+              <div class="team-item__wrapper">
+                <h3 class="team-item__name">Надежда Железина</h3>
+                <div class="team-item__role">Косметолог, дерматолог</div>
+              </div>
+              <!-- /.team-item__wrapper -->
+            </div>
+            <!-- /.team-item -->
+          </div>
+          <!-- /.col-6 -->
+
+
+          <div class="col-6">
+            <div class="team-item">
+              <picture class="team-item__photo">
+                <img class="image image--cover" src="img/content/team/1.jpg" alt="">
+              </picture>
+
+              <div class="team-item__wrapper">
+                <h3 class="team-item__name">Виктория Чапина</h3>
+                <div class="team-item__role">Косметолог, дерматолог</div>
+              </div>
+              <!-- /.team-item__wrapper -->
+            </div>
+            <!-- /.team-item -->
+          </div>
+          <!-- /.col-6 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.team -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+</main>
+
+<!-- Подвал -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer">
+      <div class="footer__content">
+        <div class="footer__logo">
+          <a href="">
+            <img class="logo logo--footer" src="img/logo.svg" alt="">
+          </a>
+        </div>
+        <!-- /.footer__logo -->
+
+        <div class="footer__nav">
+          <nav class="nav nav--footer">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="">О нас</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="">Услуги</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="">Специалисты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.nav -->
+        </div>
+        <!-- /.footer__nav -->
+
+        <div class="footer__callback callback-list">
+          <a class="link" href="tel:+375297777952">+375 29 7777952</a>
+          <a class="link link--icon" href="https://t.me/79850333696" target="_blank">
+            <svg class="svg" width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.11539 0C4.08127 0 0 4.02961 0 9C0 13.9704 4.08127 18 9.11539 18C14.1495 18 18.2308 13.9704 18.2308 9C18.2308 4.02961 14.1495 0 9.11539 0ZM13.3405 6.1207C13.2034 7.54383 12.6099 10.9972 12.3079 12.5912C12.1801 13.2659 11.9283 13.4919 11.6848 13.5141C11.1557 13.5622 10.7537 13.1685 10.2409 12.8366C9.4387 12.3173 8.98542 11.9943 8.20669 11.4877C7.30655 10.902 7.89015 10.5803 8.40289 10.0543C8.53713 9.91652 10.8694 7.82191 10.9146 7.63207C10.9203 7.60816 10.9256 7.51957 10.8722 7.47281C10.8188 7.42605 10.7401 7.44223 10.6835 7.45488C10.603 7.47281 9.32119 8.30918 6.83868 9.96398C6.47477 10.2108 6.14541 10.3307 5.84987 10.3247C5.52442 10.3177 4.89845 10.1429 4.43307 9.99352C3.86229 9.81035 3.40866 9.71332 3.44818 9.40219C3.46848 9.24012 3.69458 9.07453 4.12614 8.90508C6.78348 7.7618 8.55529 7.0084 9.4419 6.64418C11.9735 5.60464 12.4995 5.42391 12.8423 5.41793C13.2718 5.41044 13.3755 5.76046 13.3405 6.1207Z"
+                  fill="#615D58"></path>
+              </g>
+            </svg>
+            +7 985 033 36 96
+          </a>
+        </div>
+      </div>
+      <!-- /.footer__content -->
+
+      <div class="footer__info">
+        <a class="footer__privacy link link--underline" href="">Договор оферты</a>
+        <div class="footer__copyright">
+          © 2023 Fenix
+        </div>
+        <!-- /.footer__copyright -->
+      </div>
+      <!-- /.footer__info -->
+    </div>
+    <!-- /.footer -->
+  </div>
+  <!-- /.container -->
+</footer>
+
+<!-- Скрипты -->
+<!-- build:js js/script.min.js -->
+<script src="scripts/libraries/lazyload.js"></script>
+<script src="scripts/libraries/forms.js"></script>
+<script src="scripts/libraries/swiper.min.js"></script>
+
+<script src="scripts/base.js"></script>
+<script src="scripts/init.js"></script>
+<!-- endbuild -->
+</body>
+
+</html>

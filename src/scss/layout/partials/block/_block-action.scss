@@ -1,0 +1,35 @@
+.block-action {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 20px;
+  padding: 20px 32px;
+
+  background-color: $palette-gray;
+
+  font-family: Mukta, sans-serif;
+  transition: $transition ease;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: #fafafa;
+    }
+  }
+
+  span {
+    margin-left: 6px;
+    color: $color-text__gray;
+  }
+
+  &--white {
+    background-color: $palette-white;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: #e4e4e4;
+      }
+    }
+  }
+}
