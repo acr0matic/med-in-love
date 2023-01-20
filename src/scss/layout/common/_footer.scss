@@ -12,24 +12,59 @@
 }
 
 .footer {
+  @include breakpoint($breakpoint-tablet--large) {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__content {
+    @include breakpoint($breakpoint-tablet--large) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
     display: flex;
     align-items: center;
   }
 
   &__nav {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-top: 50px;
+      margin-left: 0;
+    }
+
     margin-left: auto;
   }
 
   &__callback {
+    @include breakpoint($breakpoint-tablet--large) {
+      display: none;
+    }
+
     margin-left: 90px;
   }
 
   &__info {
+    @include breakpoint($breakpoint-tablet--large) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: end;
+
+      margin-top: 0;
+    }
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     margin-top: 40px;
+  }
+
+  &__privacy {
+    margin-bottom: 12px;
+  }
+
+  &__button {
+    margin-bottom: auto;
   }
 }

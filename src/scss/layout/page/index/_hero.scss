@@ -3,11 +3,19 @@
 // -----------------------------------------------------------------------------
 
 #hero {
+  @include breakpoint($breakpoint-tablet--large) {
+    margin-bottom: 500px;
+  }
+
   padding: 0;
 }
 
 .hero {
   &__content {
+    @include breakpoint($breakpoint-tablet--large) {
+      padding-bottom: 60px;
+    }
+
     height: 100%;
     padding-top: 100px;
     border-right: 2px solid $palette-darkgray;
@@ -60,6 +68,14 @@
   &__picture {
     @include breakpoint($breakpoint-laptop) {
       width: 130%;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      position: absolute;
+      left: 0;
+      width: 100vw;
+      max-width: initial;
+      height: 500px;
     }
 
     width: 150%;

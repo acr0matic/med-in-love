@@ -6,7 +6,7 @@
     <div class="container">
       <div class="hero">
         <div class="row">
-          <div class="col-7">
+          <div class="col-12 col-md-11 col-lg-7">
             <div class="hero__content">
               <div class="row">
                 <div class="col-12">
@@ -22,6 +22,8 @@
                   <p class="hero__text">
                     Бережное безоперационная коррекция эстетических особенностей лица и тела, естественный результат с сохранением индивидуальности
                   </p>
+
+                  <button class="d-block d-lg-none button button-primary mt-4">Записаться</button>
                 </div>
                 <!-- /.col-7 offset-2 -->
               </div>
@@ -31,7 +33,7 @@
           </div>
           <!-- /.col-7 -->
 
-          <div class="col-5">
+          <div class="col-12 col-lg-5">
             <picture class="hero__picture lazy">
               <img class="image image--cover lazy__item" data-src="img/layout/page/index/hero/picture.jpg" alt="">
             </picture>
@@ -56,7 +58,7 @@
 
       <div class="advantage">
         <div class="row">
-          <div class="col-12 col-xl-9 offset-xl-2">
+          <div class="col-9 col-lg-12 col-xl-9 offset-3 offset-lg-0 offset-xl-2">
             <div class="advantage__wrapper">
               <div class="advantage__item advantage-item">
                 <div class="advantage-item__number">1</div>
@@ -150,8 +152,8 @@
   <section id="team" class="section section--gray">
     <div class="container">
       <div class="team">
-        <div class="row gy-4">
-          <div class="col-6">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-12 col-lg-6">
             <div class="section__header">
               <h2 class="section__title">
                 Специалисты
@@ -161,7 +163,7 @@
           </div>
           <!-- /.col-6 -->
 
-          <div class="col-6">
+          <div class="col-12 col-md-10 col-lg-6">
             @@include('layout/template/team-item.html', {
             "photo": "img/content/team/1.jpg",
             "name": "Виктория Инеенко",
@@ -170,7 +172,7 @@
           </div>
           <!-- /.col-6 -->
 
-          <div class="col-6">
+          <div class="col-12 col-md-10 col-lg-6">
             @@include('layout/template/team-item.html', {
             "photo": "img/content/team/2.jpg",
             "name": "Анастасия Чапина",
@@ -179,7 +181,7 @@
           </div>
           <!-- /.col-6 -->
 
-          <div class="col-6">
+          <div class="col-12 col-md-10 col-lg-6">
             @@include('layout/template/team-item.html', {
             "photo": "img/content/team/3.jpg",
             "name": "Виктория Московкина",
@@ -188,7 +190,7 @@
           </div>
           <!-- /.col-6 -->
 
-          <div class="col-6">
+          <div class="col-12 col-md-10 col-lg-6">
             @@include('layout/template/team-item.html', {
             "photo": "img/content/team/4.jpg",
             "name": "Надежда Железина",
@@ -197,8 +199,7 @@
           </div>
           <!-- /.col-6 -->
 
-
-          <div class="col-6">
+          <div class="col-12 col-md-10 col-lg-6">
             @@include('layout/template/team-item.html', {
             "photo": "img/content/team/1.jpg",
             "name": "Виктория Чапина",
@@ -231,7 +232,7 @@
     <div class="container">
       <div class="about">
         <div class="row">
-          <div class="col-7">
+          <div class="col-11 col-lg-7">
             <div class="about__content">
 
               <div class="row">
@@ -262,14 +263,23 @@
           </div>
           <!-- /.col-7 -->
 
-          <div class="col-5">
-            <picture class="about__picture lazy">
-              <img class="image image--cover lazy__item" data-src="img/layout/page/index/about/picture.jpg" alt="">
-            </picture>
+          <div class="col-12 col-lg-5">
+            <div class="row">
+              <div class="col-12">
+                <picture class="about__picture lazy">
+                  <img class="image image--cover lazy__item" data-src="img/layout/page/index/about/picture.jpg" alt="">
+                </picture>
+              </div>
+              <!-- /.col-12 -->
 
-            <p class="mt-4 pb-5">
-              Салон красоты Med in love – уникальный креативный салон красоты в Минске и Москве с невероятной атмосферой, сервисом и максимальным комфортом
-            </p>
+              <div class="col-12 mt-4 pb-5">
+                <p>
+                  Салон красоты Med in love – уникальный креативный салон красоты в Минске и Москве с невероятной атмосферой, сервисом и максимальным комфортом
+                </p>
+              </div>
+              <!-- /.col-12 -->
+            </div>
+            <!-- /.row -->
           </div>
           <!-- /.col-5 -->
         </div>

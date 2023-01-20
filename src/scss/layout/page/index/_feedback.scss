@@ -3,6 +3,10 @@ main#home {
     position: relative;
 
     &::after {
+      @include breakpoint($breakpoint-tablet--large) {
+        content: unset;
+      }
+
       content: "";
       position: absolute;
       z-index: -1;

@@ -11,10 +11,15 @@ const lazyLoadInstance = new LazyLoad({
 
 const portfolioHome = new Swiper('.slider-portfolio-home', {
   slidesPerView: 'auto',
-  centeredSlides: true,
   spaceBetween: 30,
 
   grabCursor: true,
+
+  breakpoints: {
+    991: {
+      centeredSlides: true,
+    }
+  }
 
   // mousewheel: {
   //   releaseOnEdges: true,
@@ -23,10 +28,15 @@ const portfolioHome = new Swiper('.slider-portfolio-home', {
 
 const feedbackHome = new Swiper('.slider-feedback-home', {
   slidesPerView: 'auto',
-  centeredSlides: true,
   spaceBetween: 30,
 
   grabCursor: true,
+
+  breakpoints: {
+    991: {
+      centeredSlides: true,
+    }
+  }
 
   // mousewheel: {
   //   releaseOnEdges: true,
