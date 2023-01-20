@@ -3,9 +3,33 @@
 // -----------------------------------------------------------------------------
 
 #footer {
+  padding-top: 24px;
+  padding-bottom: 30px;
 
+  background-color: $palette-gray;
+
+  color: $color-text__gray;
 }
 
 .footer {
+  &__content {
+    display: flex;
+    align-items: center;
+  }
 
+  &__nav {
+    margin-left: auto;
+  }
+
+  &__callback {
+    margin-left: 90px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 40px;
+  }
 }

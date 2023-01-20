@@ -1,0 +1,13 @@
+.callback-list {
+  display: flex;
+  align-items: center;
+
+  & > a {
+    color: $color-text__gray;
+    font-family: Mukta, sans-serif;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
