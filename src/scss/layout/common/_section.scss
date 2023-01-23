@@ -4,6 +4,11 @@
     padding-bottom: 80px;
   }
 
+  @include breakpoint($breakpoint-mobile--medium) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   padding-top: 100px;
   padding-bottom: 100px;
 
@@ -20,12 +25,20 @@
       margin-bottom: 45px;
     }
 
+    @include breakpoint($breakpoint-mobile--medium) {
+      margin-bottom: 30px;
+    }
+
     margin-bottom: 60px;
   }
 
   &__title {
     @include breakpoint($breakpoint-laptop) {
       font-size: $font-size__title--medium;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      font-size: $font-size__title--small;
     }
 
     font-size: $font-size__title--large;

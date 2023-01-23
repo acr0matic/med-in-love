@@ -1,4 +1,6 @@
 .button {
+  max-width: 300px;
+
   padding: 13px 32px;
   border: none;
   border-radius: $border-radius--button;
@@ -6,6 +8,7 @@
 
   background-color: transparent;
 
+  text-align: center;
   white-space: nowrap;
   cursor: pointer;
 
@@ -14,5 +17,9 @@
   &:disabled {
     opacity: 0.5;
     pointer-events: none;
+  }
+
+  &--arrow {
+    padding: 8px 16px;
   }
 }

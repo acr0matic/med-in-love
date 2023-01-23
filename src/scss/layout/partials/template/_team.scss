@@ -1,4 +1,9 @@
 .team-item {
+  @include breakpoint($breakpoint-mobile--medium) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   display: flex;
   align-items: center;
 
@@ -11,6 +16,11 @@
       margin-left: 25px;
     }
 
+    @include breakpoint($breakpoint-mobile--medium) {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
     margin-left: 40px;
   }
 
@@ -18,6 +28,12 @@
     @include breakpoint($breakpoint-laptop) {
       width: 100px;
       height: 100px;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto;
     }
 
     overflow: hidden;
@@ -31,6 +47,10 @@
   &__name {
     @include breakpoint($breakpoint-laptop) {
       font-size: $font-size__text--large;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      font-size: $font-size__text--large + 4px;
     }
 
     margin-bottom: 4px;

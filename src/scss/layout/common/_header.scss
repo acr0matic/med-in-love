@@ -6,6 +6,10 @@
 }
 
 .header {
+  @include breakpoint($breakpoint-mobile--medium) {
+    background-color: $palette-white;
+  }
+
   position: sticky;
   z-index: $z-index-header;
   top: 0;
@@ -33,7 +37,12 @@
     }
   }
 
-  &__callback {
+  &__logo {
+    @include breakpoint($breakpoint-mobile--medium) {
+      margin: 0 auto;
+    }
+  }
 
+  &__callback {
   }
 }

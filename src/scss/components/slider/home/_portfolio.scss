@@ -5,6 +5,10 @@
       height: 500px;
     }
 
+    @include breakpoint($breakpoint-mobile--medium) {
+      height: 300px;
+    }
+
     width: 640px;
     height: 640px;
   }

@@ -1,2 +1,10 @@
+#team {
+  .section__header {
+    @include breakpoint($breakpoint-mobile--medium) {
+      margin-bottom: 6px;
+    }
+  }
+}
+
 .team {
 }

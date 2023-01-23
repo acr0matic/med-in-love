@@ -10,12 +10,16 @@ const lazyLoadInstance = new LazyLoad({
 });
 
 const portfolioHome = new Swiper('.slider-portfolio-home', {
-  slidesPerView: 'auto',
+  slidesPerView: 1,
   spaceBetween: 30,
 
   grabCursor: true,
 
   breakpoints: {
+    420: {
+      slidesPerView: 'auto',
+    },
+
     991: {
       centeredSlides: true,
     }
@@ -27,12 +31,16 @@ const portfolioHome = new Swiper('.slider-portfolio-home', {
 });
 
 const feedbackHome = new Swiper('.slider-feedback-home', {
-  slidesPerView: 'auto',
+  slidesPerView: 1,
   spaceBetween: 30,
 
   grabCursor: true,
 
   breakpoints: {
+    420: {
+      slidesPerView: 'auto',
+    },
+
     991: {
       centeredSlides: true,
     }

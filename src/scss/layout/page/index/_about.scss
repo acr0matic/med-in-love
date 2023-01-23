@@ -16,10 +16,41 @@
       padding-bottom: 40px;
     }
 
+    @include breakpoint($breakpoint-mobile--medium) {
+      padding-top: 80px;
+      padding-bottom: 0;
+
+      border-right: 0;
+    }
+
     height: 100%;
 
     padding-top: 130px;
     border-right: 2px solid $palette-darkgray;
+  }
+
+  &__wrapper {
+    @include breakpoint($breakpoint-mobile--medium) {
+      padding-top: 24px;
+      padding-right: 16px;
+      padding-bottom: 30px;
+      border-right: 2px solid $palette-darkgray;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -50%;
+
+        display: block;
+        width: 200%;
+        height: 2px;
+
+        background-color: $palette-darkgray;
+      }
+    }
+
+    position: relative;
   }
 
   &__subtitle {
@@ -38,13 +69,17 @@
     }
 
     @include breakpoint($breakpoint-tablet--large) {
-      // position: absolute;
-      // left: 0;
-      // width: 100vw;
-      // max-width: initial;
-
       width: 100%;
       height: 500px;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      position: relative;
+      left: -20px;
+
+      width: calc(100% + 40px);
+      max-width: initial;
+      height: 300px;
     }
 
     width: 1085px;

@@ -3,6 +3,10 @@
 
 .advantage {
   &__wrapper {
+    @include breakpoint($breakpoint-mobile--medium) {
+      margin-bottom: -20px;
+    }
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -11,6 +15,10 @@
   }
 
   &__item {
+    @include breakpoint($breakpoint-mobile--medium) {
+      margin-bottom: 20px;
+    }
+
     width: 400px;
     margin-bottom: 60px;
   }

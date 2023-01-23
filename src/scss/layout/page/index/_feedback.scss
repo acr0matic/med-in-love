@@ -1,5 +1,10 @@
 main#home {
   #feedback {
+    @include breakpoint($breakpoint-mobile--medium) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
     position: relative;
 
     &::after {

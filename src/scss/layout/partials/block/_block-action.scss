@@ -1,4 +1,8 @@
 .block-action {
+  @include breakpoint($breakpoint-mobile--medium) {
+    padding: 12px 20px;
+  }
+
   position: relative;
 
   display: flex;

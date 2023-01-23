@@ -17,10 +17,17 @@
     justify-content: space-between;
   }
 
+  @include breakpoint($breakpoint-mobile--medium) {
+    flex-direction: column;
+  }
+
+  position: relative;
+  padding: 0 10px;
+
   &__content {
     @include breakpoint($breakpoint-tablet--large) {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
     }
 
     display: flex;
@@ -31,6 +38,12 @@
     @include breakpoint($breakpoint-tablet--large) {
       margin-top: 50px;
       margin-left: 0;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      margin-top: 20px;
+      margin-right: auto;
+      margin-bottom: 30px;
     }
 
     margin-left: auto;
@@ -65,6 +78,18 @@
   }
 
   &__button {
+    @include breakpoint($breakpoint-mobile--medium) {
+      position: static;
+      width: 100%;
+      max-width: 360px;
+
+      margin-top: 24px;
+    }
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
     margin-bottom: auto;
   }
 }
