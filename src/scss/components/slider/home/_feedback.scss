@@ -5,7 +5,8 @@
       height: 500px;
     }
 
-    @include breakpoint($breakpoint-mobile--medium) {
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 350px;
       height: 300px;
     }
 

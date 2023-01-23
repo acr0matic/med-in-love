@@ -154,64 +154,81 @@
 
   <section id="team" class="section section--gray">
     <div class="container">
+      <div class="section__header d-block d-sm-none">
+        <h2 class="section__title">
+          Специалисты
+        </h2>
+      </div>
+      <!-- /.section__header -->
+
       <div class="team">
-        <div class="row gy-4 justify-content-center">
-          <div class="col-12 col-lg-6">
-            <div class="section__header">
-              <h2 class="section__title">
-                Специалисты
-              </h2>
+        <div class="swiper swiper-mobile-sm slider-team">
+          <div class="swiper-wrapper row gy-4 justify-sm-content-center">
+            <div class="swiper-slide col-12 col-lg-6 d-none d-sm-block">
+              <div class="section__header">
+                <h2 class="section__title">
+                  Специалисты
+                </h2>
+              </div>
+              <!-- /.section__header -->
             </div>
-            <!-- /.section__header -->
-          </div>
-          <!-- /.col-6 -->
+            <!-- /.col-6 -->
 
-          <div class="col-12 col-md-10 col-lg-6">
-            @@include('layout/template/team-item.html', {
-            "photo": "img/content/team/1.jpg",
-            "name": "Виктория Инеенко",
-            "role": "Косметолог, дерматолог"
-            })
-          </div>
-          <!-- /.col-6 -->
+            <div class="swiper-slide col-12 col-md-10 col-lg-6">
+              @@include('layout/template/team-item.html', {
+              "photo": "img/content/team/1.jpg",
+              "name": "Виктория Инеенко",
+              "role": "Косметолог, дерматолог"
+              })
+            </div>
+            <!-- /.col-6 -->
 
-          <div class="col-12 col-md-10 col-lg-6">
-            @@include('layout/template/team-item.html', {
-            "photo": "img/content/team/2.jpg",
-            "name": "Анастасия Чапина",
-            "role": "Косметолог, дерматолог"
-            })
-          </div>
-          <!-- /.col-6 -->
+            <div class="swiper-slide col-12 col-md-10 col-lg-6">
+              @@include('layout/template/team-item.html', {
+              "photo": "img/content/team/2.jpg",
+              "name": "Анастасия Чапина",
+              "role": "Косметолог, дерматолог"
+              })
+            </div>
+            <!-- /.col-6 -->
 
-          <div class="col-12 col-md-10 col-lg-6">
-            @@include('layout/template/team-item.html', {
-            "photo": "img/content/team/3.jpg",
-            "name": "Виктория Московкина",
-            "role": "Косметолог, дерматолог"
-            })
-          </div>
-          <!-- /.col-6 -->
+            <div class="swiper-slide col-12 col-md-10 col-lg-6">
+              @@include('layout/template/team-item.html', {
+              "photo": "img/content/team/3.jpg",
+              "name": "Виктория Московкина",
+              "role": "Косметолог, дерматолог"
+              })
+            </div>
+            <!-- /.col-6 -->
 
-          <div class="col-12 col-md-10 col-lg-6">
-            @@include('layout/template/team-item.html', {
-            "photo": "img/content/team/4.jpg",
-            "name": "Надежда Железина",
-            "role": "Косметолог, дерматолог"
-            })
-          </div>
-          <!-- /.col-6 -->
+            <div class="swiper-slide col-12 col-md-10 col-lg-6">
+              @@include('layout/template/team-item.html', {
+              "photo": "img/content/team/4.jpg",
+              "name": "Надежда Железина",
+              "role": "Косметолог, дерматолог"
+              })
+            </div>
+            <!-- /.col-6 -->
 
-          <div class="col-12 col-md-10 col-lg-6">
-            @@include('layout/template/team-item.html', {
-            "photo": "img/content/team/1.jpg",
-            "name": "Виктория Чапина",
-            "role": "Косметолог, дерматолог"
-            })
+            <div class="swiper-slide col-12 col-md-10 col-lg-6">
+              @@include('layout/template/team-item.html', {
+              "photo": "img/content/team/1.jpg",
+              "name": "Виктория Чапина",
+              "role": "Косметолог, дерматолог"
+              })
+            </div>
+            <!-- /.col-6 -->
           </div>
-          <!-- /.col-6 -->
+          <!-- /.row -->
+
+          <div class="swiper-control mb-4">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!-- /.swiper-control -->
         </div>
-        <!-- /.row -->
+        <!-- /.swiper -->
 
         <div class="team__action block-action block-action--white">
           <div class="block-action__text">
@@ -337,6 +354,13 @@
               <!-- /.swiper-slide -->
             </div>
             <!-- /.swiper-wrapper -->
+
+            <div class="swiper-control">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <!-- /.swiper-control -->
           </div>
           <!-- /.swiper slider-portfolio -->
         </div>
@@ -399,6 +423,13 @@
               <!-- /.swiper-slide -->
             </div>
             <!-- /.swiper-wrapper -->
+
+            <div class="swiper-control">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <!-- /.swiper-control -->
           </div>
           <!-- /.swiper slider-feedback -->
         </div>
