@@ -1,0 +1,94 @@
+@@include('layout/partials/header.html')
+
+<main id="price">
+  <section id="service" class="section">
+    <div class="container">
+      <div class="section__header">
+        <h1 class="section__title">
+          Прайс
+        </h1>
+      </div>
+      <!-- /.section__header -->
+
+      <div class="service">
+        <div class="swiper slider-service">
+          <div class="swiper-pagination swiper-pagination--button"></div>
+
+          <div class="swiper-wrapper">
+            <div data-title="Все услуги" class="swiper-slide">
+              <div class="service__wrapper">
+                @@loop('layout/template/service-item.html', [
+                {'image': "img/content/service/1.jpg", 'title': "Филлеры", 'price': "от 400 до 680 BYN"},
+                {'image': "img/content/service/2.jpg", 'title': "Заполнение носослезной борозды", 'price': "от 400 до 680 BYN"},
+                {'image': "img/content/service/3.jpg", 'title': "Безоперационная ринопластика", 'price': "от 400 до 680 BYN"},
+                ])
+              </div>
+              <!-- /.service__wrapper -->
+
+              <div class="service__action block-action">
+                <div class="block-action__text">
+                  Показать еще
+                  <span class="block-action__count">30</span>
+                </div>
+                <!-- /.block-action__text -->
+
+                <a class="stretched-link" href="/service.html"></a>
+              </div>
+              <!-- /.team__action -->
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div data-title="Тело" class="swiper-slide">
+              <div class="service__wrapper">
+                @@loop('layout/template/service-item.html', [
+                {'image': "img/content/service/2.jpg", 'title': "Заполнение носослезной борозды", 'price': "от 400 до 680 BYN"},
+                ])
+              </div>
+              <!-- /.service__wrapper -->
+
+              <div class="service__action block-action">
+                <div class="block-action__text">
+                  Прайс
+                  <span class="block-action__count">36 услуг</span>
+                </div>
+                <!-- /.block-action__text -->
+
+                <a class="stretched-link" href="/service.html"></a>
+              </div>
+              <!-- /.team__action -->
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div data-title="Лицо" class="swiper-slide">
+              <div class="service__wrapper">
+                @@loop('layout/template/service-item.html', [
+                {'image': "img/content/service/3.jpg", 'title': "Безоперационная ринопластика", 'price': "от 400 до 680 BYN"},
+                {'image': "img/content/service/1.jpg", 'title': "Филлеры", 'price': "от 400 до 680 BYN"},
+                ])
+              </div>
+              <!-- /.service__wrapper -->
+
+              <div class="service__action block-action">
+                <div class="block-action__text">
+                  Показать еще
+                  <span class="block-action__count">30</span>
+                </div>
+                <!-- /.block-action__text -->
+
+                <a class="stretched-link" href="/service.html"></a>
+              </div>
+              <!-- /.team__action -->
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+        </div>
+        <!-- /.swiper -->
+      </div>
+      <!-- /.service -->
+    </div>
+    <!-- /.container -->
+  </section>
+</main>
+
+@@include('layout/partials/footer.html')

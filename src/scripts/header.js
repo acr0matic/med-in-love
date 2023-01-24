@@ -1,6 +1,9 @@
 const header = document.getElementById('header');
 
 if (header) {
+  GetHeight(header);
+  window.addEventListener('resize', () => GetHeight(header));
+
   const mobile = header.querySelector('#mobile-menu');
   const burger = header.querySelector('.header__burger');
 

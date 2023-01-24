@@ -1,2 +1,21 @@
 .table {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dedcd9;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    & > div {
+    }
+  }
 }

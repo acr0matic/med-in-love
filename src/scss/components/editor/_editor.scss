@@ -1,0 +1,35 @@
+[data-editor="default"] {
+  h4 {
+    margin-bottom: 10px;
+    font-size: $font-size__text--large;
+  }
+
+  p {
+    margin-bottom: 15px;
+    color: $color-text__gray;
+  }
+
+  ul,
+  ol {
+    li {
+      &:not(:last-child) {
+        margin-bottom: 6px;
+      }
+
+      &::before {
+        content: "";
+
+        display: inline-block;
+        vertical-align: middle;
+
+        width: 4px;
+        height: 4px;
+        margin-right: 6px;
+
+        border-radius: 50%;
+
+        background-color: #b1b0ae;
+      }
+    }
+  }
+}

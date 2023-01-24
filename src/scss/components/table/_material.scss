@@ -1,0 +1,17 @@
+.table-material {
+  font-size: $font-size__text--large;
+
+  .table__row > div {
+    &:nth-child(2) {
+      margin-left: auto;
+      color: $color-text__gray;
+      text-align: right;
+    }
+
+    &:last-child {
+      margin-left: 12px;
+      font-family: RobotoCondensed, sans-serif;
+      text-align: right;
+    }
+  }
+}

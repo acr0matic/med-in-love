@@ -5,3 +5,7 @@
 .disable-scroll {
   overflow: hidden;
 }
+
+.position-sticky {
+  top: calc(var(--header-height) + 24px);
+}

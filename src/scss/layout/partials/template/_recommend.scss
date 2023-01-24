@@ -1,0 +1,35 @@
+.recommend-item {
+  position: relative;
+  padding: 24px 20px;
+
+  background-color: $palette-gray;
+  transition: $transition ease;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: #fafafa;
+    }
+  }
+
+  .stretched-link::after {
+    z-index: 3;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    margin-bottom: 65px;
+
+    font-weight: $weight-Bold;
+    font-size: $font-size__text--large;
+  }
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

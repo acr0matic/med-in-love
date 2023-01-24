@@ -1,3 +1,16 @@
+const portfolioService = new Swiper('.slider-portfolio', {
+  slidesPerView: 1.8,
+  spaceBetween: 30,
+  centeredSlides: true,
+  centeredSlidesBounds: true,
+  loop: true,
+
+  navigation: {
+    nextEl: '.slider-portfolio .swiper-button-next',
+    prevEl: '.slider-portfolio .swiper-button-prev',
+  },
+});
+
 const portfolioHome = new Swiper('.slider-portfolio-home', {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -48,6 +61,37 @@ const feedbackHome = new Swiper('.slider-feedback-home', {
       centeredSlides: true,
     }
   }
+});
+
+const serviceList = [];
+const serviceTab = new Swiper('.slider-service', {
+  speed: 400,
+  simulateTouch: false,
+  spaceBetween: 30,
+  autoHeight: true,
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+
+  on: {
+    beforeInit(instance) {
+      const slides = instance.wrapperEl.querySelectorAll('.swiper-slide')
+      slides.forEach((slide) => {
+        serviceList.push(slide.dataset.title);
+      });
+    },
+  },
+
+  pagination: {
+    el: '.slider-service .swiper-pagination',
+    clickable: true,
+
+    renderBullet(index, className) {
+      return `<span class="${className}">${serviceList[index]}</span>`;
+    },
+  },
 });
 
 //////////////////////////////////////////////////////////////////

@@ -19,10 +19,10 @@
 
   @include breakpoint($breakpoint-mobile--medium) {
     flex-direction: column;
+    padding: 0 10px;
   }
 
   position: relative;
-  padding: 0 10px;
 
   &__content {
     @include breakpoint($breakpoint-tablet--large) {

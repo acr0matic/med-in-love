@@ -1,0 +1,47 @@
+.service-description {
+  &__info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    color: $color-text__gray;
+
+    font-size: $font-size__text--large;
+    font-family: RobotoCondensed, sans-serif;
+  }
+
+  &__body {
+    font-family: Mukta, sans-serif;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      margin-top: 8px;
+    }
+
+    li {
+      flex-shrink: 0;
+      padding: 4px 16px;
+
+      border-radius: 40px;
+      background-color: $palette-gray;
+
+      &:not(:last-child) {
+        margin-right: 6px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__block {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: $font-size__title--small;
+  }
+}

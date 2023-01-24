@@ -50,6 +50,12 @@
 
     transition: $transition ease;
 
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
     &::after {
       content: none;
     }
@@ -63,6 +69,11 @@
     background-image: url("../img/icons/control/slider__right.svg");
   }
 
+  &-button--circle {
+    width: 46px;
+    height: 46px;
+  }
+
   &-pagination {
     &-bullet {
       width: 8px;
@@ -74,6 +85,36 @@
 
     &-bullet-active {
       background-color: $color-text__primary;
+    }
+
+    &--button {
+      position: static;
+      display: block;
+
+      .swiper-pagination-bullet {
+        flex-shrink: 0;
+
+        width: auto;
+        height: auto;
+
+        margin: 0;
+        padding: 10px 32px;
+
+        border-radius: 40px;
+        background-color: $palette-gray;
+
+        color: $color-text__primary;
+        opacity: 1;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+
+        &-active {
+          background-color: $color-text__primary;
+          color: $color-text__white;
+        }
+      }
     }
   }
 }
