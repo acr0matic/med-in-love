@@ -1,0 +1,46 @@
+.service-order {
+  position: fixed;
+  z-index: $z-index-header;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  transition: 0.35s ease;
+
+  &.hidden {
+    bottom: -100px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    padding: 25px 30px;
+
+    background-color: $palette-gray;
+  }
+
+  &__title,
+  &__info,
+  &__price {
+    font-size: $font-size__title--small;
+  }
+
+  &__title {
+    margin-right: auto;
+  }
+
+  &__info {
+    color: $color-text__gray;
+  }
+
+  &__price {
+    margin-left: 12px;
+    font-family: RobotoCondensed, sans-serif;
+  }
+
+  &__button {
+    margin-left: 40px;
+  }
+}

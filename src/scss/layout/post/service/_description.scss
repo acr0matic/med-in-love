@@ -34,6 +34,11 @@
     }
   }
 
+  &__picture {
+    width: 100%;
+    height: 350px;
+  }
+
   &__block {
     &:not(:last-child) {
       margin-bottom: 60px;
