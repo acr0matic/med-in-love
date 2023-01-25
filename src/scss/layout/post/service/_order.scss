@@ -9,29 +9,88 @@
   transition: 0.35s ease;
 
   &.hidden {
-    bottom: -100px;
+    bottom: -150px;
   }
 
   &__wrapper {
+    @include breakpoint($breakpoint-mobile--medium) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding: 12px 10px;
+    }
+
     display: flex;
     align-items: center;
 
     padding: 25px 30px;
 
+    border-width: 1px 1px 0;
+    border-style: solid;
+    border-color: #dedcd9;
+
     background-color: $palette-gray;
+  }
+
+  &__content {
+    @include breakpoint($breakpoint-tablet) {
+      flex-wrap: wrap;
+      margin-right: 0;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      flex-wrap: nowrap;
+      width: 100%;
+
+      margin-bottom: 12px;
+    }
+
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+
+    margin-right: 40px;
   }
 
   &__title,
   &__info,
   &__price {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--large;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--regular;
+    }
+
     font-size: $font-size__title--small;
   }
 
+  &__info,
+  &__price {
+    flex-shrink: 0;
+  }
+
   &__title {
+    @include breakpoint($breakpoint-tablet) {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 0;
+    }
+
+    flex-grow: 1;
     margin-right: auto;
   }
 
   &__info {
+    @include breakpoint($breakpoint-tablet) {
+      margin-left: 0;
+    }
+
+    margin-left: 24px;
     color: $color-text__gray;
   }
 
@@ -41,6 +100,6 @@
   }
 
   &__button {
-    margin-left: 40px;
+    margin-left: auto;
   }
 }

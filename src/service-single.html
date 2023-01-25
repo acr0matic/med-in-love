@@ -112,7 +112,7 @@
         </div>
         <!-- /.header__action -->
 
-        <div class="header__burger d-block d-sm-none">
+        <div class="header__burger d-block d-lg-none">
           <button class="hamburger hamburger--squeeze" type="button">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
@@ -129,7 +129,7 @@
   </header>
 
 <main id="single-service">
-  <section id="service-description" class="section">
+  <section id="service-description" class="section section--overflow">
     <div class="container">
       <div class="section__header">
         <h1 class="section__title">
@@ -140,7 +140,7 @@
 
       <div class="service-description">
         <div class="row align-items-start">
-          <div class="col-4 position-sticky">
+          <div class="col-lg-4 position-lg-sticky">
             <picture class="service-description__picture lazy">
               <img class="image image--cover lazy__item" data-src="img/content/service/picture.jpg" alt="">
             </picture>
@@ -164,7 +164,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-8">
+          <div class="col-lg-8">
             <div class="service-description__block">
               <h3 class="service-description__title">Материалы</h3>
               <div class="table table-material">
@@ -240,7 +240,7 @@
     <!-- /.container -->
   </section>
 
-  <section id="service-portfolio" class="section section--gray">
+  <section id="service-portfolio" class="section section--gray section--overflow">
     <div class="service-portfolio">
       <div class="container">
         <div class="section__header">
@@ -297,6 +297,13 @@
 
             <div class="swiper-button-prev swiper-button--circle"></div>
             <div class="swiper-button-next swiper-button--circle"></div>
+
+            <div class="swiper-control">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <!-- /.swiper-control -->
           </div>
           <!-- /.swiper slider-portfolio -->
         </div>
@@ -318,7 +325,7 @@
 
       <div class="service-recommend">
         <div class="row g-1">
-          <div class="col-4">
+          <div class="col-12 col-sm-6 col-lg-4">
             <div class="recommend-item">
               <div class="recommend-item__content">
                 <h3 class="recommend-item__title">Мезотерапия</h3>
@@ -334,7 +341,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-sm-6 col-lg-4">
             <div class="recommend-item">
               <div class="recommend-item__content">
                 <h3 class="recommend-item__title">Мезотерапия</h3>
@@ -350,7 +357,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-sm-6 col-lg-4">
             <div class="recommend-item">
               <div class="recommend-item__content">
                 <h3 class="recommend-item__title">Мезотерапия</h3>
@@ -366,10 +373,10 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-sm-6 col-lg-4">
             <div class="recommend-item">
               <div class="recommend-item__content">
-                <h3 class="recommend-item__title">Мезотерапия</h3>
+                <h3 class="recommend-item__title">Контурная пластика губ</h3>
                 <img class="recommend-item__arrow" src="img/icons/misc/arrow--long.svg" alt="">
               </div>
               <!-- /.recommend-item__content -->
@@ -382,7 +389,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-sm-6 col-lg-4">
             <div class="recommend-item">
               <div class="recommend-item__content">
                 <h3 class="recommend-item__title">Мезотерапия</h3>
@@ -398,7 +405,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-sm-6 col-lg-4">
             <div class="recommend-item">
               <div class="recommend-item__content">
                 <h3 class="recommend-item__title">Мезотерапия</h3>
@@ -424,9 +431,12 @@
   <div class="service-order" data-hide="footer">
     <div class="container">
       <div class="service-order__wrapper">
-        <h3 class="service-order__title">Моно нити</h3>
-        <div class="service-order__info">1 шт</div>
-        <div class="service-order__price">35 BYN </div>
+        <div class="service-order__content">
+          <h3 class="service-order__title">Моно нити</h3>
+          <div class="service-order__info">1 шт</div>
+          <div class="service-order__price">35 BYN </div>
+        </div>
+        <!-- /.service-order__content -->
         <button class="service-order__button button button-primary">Записаться</button>
       </div>
       <!-- /.service-order__wrapper -->

@@ -1,7 +1,15 @@
 .table-material {
+  @include breakpoint($breakpoint-mobile--large) {
+    font-size: $font-size__text--big;
+  }
+
   font-size: $font-size__text--large;
 
   .table__row > div {
+    &:not(:first-child) {
+      flex-shrink: 0;
+    }
+
     &:nth-child(2) {
       margin-left: auto;
       color: $color-text__gray;

@@ -1,5 +1,17 @@
 .service-portfolio {
   &__picture {
+    @include breakpoint($breakpoint-laptop) {
+      height: 475px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      height: 360px;
+    }
+
+    @include breakpoint($breakpoint-mobile) {
+      height: 300px;
+    }
+
     height: 620px;
     user-select: none;
   }

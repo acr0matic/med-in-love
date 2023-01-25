@@ -1,14 +1,30 @@
 const portfolioService = new Swiper('.slider-portfolio', {
-  slidesPerView: 1.8,
+  slidesPerView: 1,
   spaceBetween: 30,
-  centeredSlides: true,
-  centeredSlidesBounds: true,
+
   loop: true,
 
   navigation: {
     nextEl: '.slider-portfolio .swiper-button-next',
     prevEl: '.slider-portfolio .swiper-button-prev',
   },
+
+
+  pagination: {
+    el: '.slider-portfolio .swiper-pagination',
+  },
+
+  breakpoints: {
+    576: {
+      slidesPerView: 1.4,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+    },
+
+    991: {
+      slidesPerView: 1.8,
+    }
+  }
 });
 
 const portfolioHome = new Swiper('.slider-portfolio-home', {

@@ -1,5 +1,12 @@
 .recommend-item {
+  @include breakpoint($breakpoint-mobile--large) {
+    height: 100px;
+    padding: 10px 20px;
+  }
+
   position: relative;
+
+  height: 160px;
   padding: 24px 20px;
 
   background-color: $palette-gray;
@@ -18,16 +25,39 @@
   &__content {
     position: relative;
     z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+
+    height: 100%;
   }
 
   &__title {
-    margin-bottom: 65px;
+    width: 70%;
 
     font-weight: $weight-Bold;
     font-size: $font-size__text--large;
   }
 
+  &__arrow {
+    @include breakpoint($breakpoint-laptop) {
+      transform: translateX(-70px);
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      transform: translateX(-40px);
+    }
+
+    margin-top: auto;
+  }
+
   &__bg {
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 100px;
+    }
+
     position: absolute;
     right: 0;
     bottom: 0;

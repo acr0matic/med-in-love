@@ -6,7 +6,7 @@
 }
 
 .header {
-  @include breakpoint($breakpoint-mobile--medium) {
+  @include breakpoint($breakpoint-tablet--large) {
     background-color: $palette-white;
   }
 
@@ -39,7 +39,7 @@
   }
 
   &__logo {
-    @include breakpoint($breakpoint-mobile--medium) {
+    @include breakpoint($breakpoint-tablet--large) {
       margin: 0 auto;
     }
   }

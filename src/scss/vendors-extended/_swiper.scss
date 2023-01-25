@@ -72,6 +72,8 @@
   &-button--circle {
     width: 46px;
     height: 46px;
+
+    transform: translateY(-50%);
   }
 
   &-pagination {

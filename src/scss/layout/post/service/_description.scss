@@ -1,3 +1,9 @@
+#service-description {
+  @include breakpoint($breakpoint-mobile--large) {
+    padding-top: 30px;
+  }
+}
+
 .service-description {
   &__info {
     margin-top: 20px;
@@ -35,11 +41,38 @@
   }
 
   &__picture {
+    @include breakpoint($breakpoint-laptop) {
+      height: 300px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 360px;
+      height: 360px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 100%;
+    }
+
+    @include breakpoint($breakpoint-mobile) {
+      height: 300px;
+    }
+
     width: 100%;
     height: 350px;
   }
 
   &__block {
+    &:first-child {
+      @include breakpoint($breakpoint-tablet--large) {
+        margin-top: 80px;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-top: 60px;
+      }
+    }
+
     &:not(:last-child) {
       margin-bottom: 60px;
     }
